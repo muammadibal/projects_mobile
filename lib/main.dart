@@ -3,6 +3,7 @@ import 'package:projects_mobile/ui/pages/detail_page.dart';
 import 'package:projects_mobile/ui/pages/home_page.dart';
 import 'package:projects_mobile/ui/pages/login_page.dart';
 import 'package:projects_mobile/ui/pages/register_page.dart';
+import 'package:projects_mobile/utils/constants.dart';
 import 'package:projects_mobile/utils/conver_color.dart';
 
 void main() {
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       title: 'Projects',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: buildMaterialColor(Color.fromARGB(255, 20, 94, 211)),
+        scaffoldBackgroundColor: bgColor,
+        primarySwatch: buildMaterialColor(blue),
       ),
       routes: {
         '/': (context) => RegisterPage(),

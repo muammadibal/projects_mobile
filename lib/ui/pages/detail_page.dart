@@ -77,7 +77,7 @@ class _DetailPageState extends State<DetailPage> {
                   'Sr. UI/UX',
                   style: titleStyle,
                 ),
-                Text('Remote, Jakarta Selatan', style: subTitleStyle)
+                Text('Remote, Jakarta Selatan', style: contentTitleStyle)
               ]),
             ),
             Container(
@@ -91,7 +91,7 @@ class _DetailPageState extends State<DetailPage> {
                     ),
                     Text(
                         'Irure nostrud enim et eiusmod elit sit adipisicing ea Lorem esse dolore exercitation. Id minim adipisicing Lorem aliqua cupidatat velit ea aute qui do nostrud. Aliqua occaecat nostrud exercitation sunt consectetur nisi nulla laboris sint est amet ad adipisicing. Irure sit in dolor occaecat et velit mollit irure est reprehenderit incididunt laboris do. \n\nEa reprehenderit exercitation dolore cupidatat est voluptate fugiat. Sint anim nostrud voluptate nisi in pariatur dolore enim exercitation eu. Voluptate incididunt nostrud magna pariatur cupidatat veniam esse. Fugiat fugiat qui laboris incididunt duis esse consectetur deserunt consectetur. \n\n,Nostrud elit cillum ea proident anim velit ullamco. Nostrud ut Lorem nostrud anim id proident nostrud nisi ex deserunt minim non. Eu amet quis irure elit est tempor ut quis laborum. Magna incididunt est dolore ipsum aliqua qui eu laboris Lorem aute ad aliquip ullamco id. Ad veniam minim irure duis elit irure reprehenderit. Id adipisicing velit esse laborum deserunt laboris commodo nisi proident pariatur.',
-                        style: contentTitleStyle),
+                        style: subTitleStyle),
                   ]),
             ),
             SizedBox(
@@ -106,6 +106,7 @@ class _DetailPageState extends State<DetailPage> {
                 margin: EdgeInsets.only(
                     left: gapSize, right: gapSize, top: gapSize),
                 child: Button(
+                  title: "Continue",
                   onPress: () {
                     Navigator.pop(context);
                   },

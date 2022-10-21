@@ -30,7 +30,7 @@ class _HeaderHomeState extends State<HeaderHome> {
                 'JK Rowling',
                 style: titleStyle,
               ),
-              Text('Quality Assurance', style: contentTitleStyle),
+              Text('Quality Assurance', style: subTitleStyle),
             ],
           ),
         ),

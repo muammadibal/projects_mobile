@@ -46,7 +46,7 @@ class _CardProjectState extends State<CardProject> {
               ),
               Text(
                 'Rp. 300.000',
-                style: contentTitleStyle,
+                style: subTitleStyle,
               )
             ],
           )
