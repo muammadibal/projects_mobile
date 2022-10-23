@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:projects_mobile/utils/constants.dart';
 
 class CardProject extends StatefulWidget {
-  const CardProject({Key? key}) : super(key: key);
+  final int? index;
+  const CardProject({Key? key, this.index}) : super(key: key);
 
   @override
   State<CardProject> createState() => _CardProjectState();
@@ -23,17 +24,19 @@ class _CardProjectState extends State<CardProject> {
           Navigator.pushNamed(context, '/detail');
         },
         child: Row(children: [
-          Container(
-            height: 50,
-            width: 50,
-            decoration: BoxDecoration(
-                color: Colors.grey.shade100,
-                borderRadius: BorderRadius.circular(16),
-                image: DecorationImage(
-                    fit: BoxFit.contain,
-                    image: NetworkImage(
-                        'https://cdn-icons-png.flaticon.com/512/5968/5968705.png'))),
-          ),
+          Hero(
+              tag: 'imgDetail-${widget.index}',
+              child: Container(
+                height: 50,
+                width: 50,
+                decoration: BoxDecoration(
+                    color: Colors.grey.shade100,
+                    borderRadius: BorderRadius.circular(16),
+                    image: const DecorationImage(
+                        fit: BoxFit.contain,
+                        image: NetworkImage(
+                            'https://cdn-icons-png.flaticon.com/512/5968/5968705.png'))),
+              )),
           SizedBox(
             width: gapSize,
           ),

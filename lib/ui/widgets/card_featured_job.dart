@@ -50,7 +50,7 @@ class _CardFeaturedJobState extends State<CardFeaturedJob> {
               )
             ],
           ),
-          SizedBox(height: gapSize / 2),
+          SizedBox(height: gapSize),
           Container(
             width: MediaQuery.of(context).size.width - 7 * gapSize,
             child: Text(
@@ -60,7 +60,7 @@ class _CardFeaturedJobState extends State<CardFeaturedJob> {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-          SizedBox(height: gapSize / 2),
+          SizedBox(height: gapSize ),
           Wrap(
             children: [
               Container(

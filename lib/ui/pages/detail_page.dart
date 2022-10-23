@@ -18,17 +18,22 @@ class _DetailPageState extends State<DetailPage> {
           ListView(children: [
             Stack(
               children: [
-                Container(
-                  height: 250,
-                  margin: EdgeInsets.only(
-                      left: gapSize, right: gapSize, top: gapSize, bottom: 30),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(gapSize),
-                      image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: NetworkImage(
-                              'https://images.unsplash.com/photo-1664575197229-3bbebc281874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'))),
-                ),
+                Hero(
+                    tag: 'imgDetail-1',
+                    child: Container(
+                      height: 250,
+                      margin: EdgeInsets.only(
+                          left: gapSize,
+                          right: gapSize,
+                          top: gapSize,
+                          bottom: 30),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(gapSize),
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: NetworkImage(
+                                  'https://images.unsplash.com/photo-1664575197229-3bbebc281874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'))),
+                    )),
                 Positioned(
                     left: 30,
                     top: 2 * gapSize,
